@@ -32,7 +32,28 @@ The CheckFoV tool graphically presents results to users through two Java Swing p
 
 ## Getting Started
 
-To get started with CheckFoV, you can download the latest release and refer to the documentation for usage instructions. 
+To get started with CheckFoV, you can download the latest release.
+
+First, the code has to be compiled:
+
+```bash
+javac *.java
+```
+Then, after sucessful compilation, the tool can be executed in the following way:
+
+```bash
+java CheckFoV arg1 arg2 -v
+```
+
+In this execution:
+
+**arg1** may by "0" (random configuration) or the path to a CSV file (Ax,Ay,Radius,Angle,Orientation). This is the configuration of visual sensors.
+
+**arg2** may by "0" (random configuration) or the path to a CSV file (Tx,Ty). This is the configuration of targets.
+
+The **-v** is the verbose mode (outputs in the standard output)
+
+The configurations for random definitions can be set in the "randomConfigurations.csv" file (NumberSensors,NumberTargets,Width,Height,MinRadius,MaxRadius,MinAngle,MaxAngle).
 
 ## License
 
